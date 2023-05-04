@@ -2,16 +2,114 @@
 /* Custom CSS and variables to override Bootstrap goes to variables */
 @import "./scss/variables";
 /*  Import all of Bootstrap's CSS */
-@import "~bootstrap/scss/bootstrap";
+
+/* BULMA HAS ISSUES SO NEED TO IMPORT CSS DIRECTLY */
+/* @import "../node_modules/bulma/css/bulma.min.css"; */
 @import "~bulma/bulma";
 
 /* Importing ends here */
 
-@font-face {
-  font-family: RobotoRegular, Arial, Helvetica, sans-serif;
-  src: "url(./fonts/Roboto-Regular.ttf)";
+html {
+  scroll-behavior: smooth;
+}
+.navbar,
+#navbarBasicExample {
+  background-color: transparent;
 }
 
-body {
-  font-family: RobotoRegular, sans-serif;
+.showcase-col1.p-6 {
+  @media screen and (min-width: 900px) {
+    padding: 0 !important;
+  }
+}
+
+.address-border {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(33, 37, 41);
+}
+
+/* Accordion Related */
+
+/*Acco*/
+
+.ac-container {
+  font-size: 1.2rem;
+  color: rgb(33, 37, 41);
+  line-height: 1.5;
+  width: 100%;
+  margin: 50px auto 50px auto;
+  text-align: left;
+
+  div {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(222, 226, 230);
+  }
+}
+.ac-container label {
+  height: 50px !important;
+  line-height: 21px !important;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+
+  cursor: pointer;
+}
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
+  background-color: rgb(231, 241, 255);
+}
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 13px;
+  top: 17px;
+  background-size: contain;
+  background-image: url(http://dasnr54.dasnr.okstate.edu:8080/training2015/rootfiles/arrow_down-01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background: transparent url(http://dasnr54.dasnr.okstate.edu:8080/training2015/rootfiles/arrow_down-01.png) no-repeat center center; */
+}
+
+.ac-container input:checked + label:hover:after {
+  background-image: url(http://dasnr54.dasnr.okstate.edu:8080/training2015/rootfiles/arrow_up-01.png);
+}
+
+.ac-container input {
+  display: none;
+}
+
+.ac-container article {
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0;
+  position: relative;
+  z-index: 10;
+
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+
+.ac-container article p {
+  padding: 20px;
+}
+
+.ac-container input:checked ~ article {
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+}
+
+.ac-container input:checked ~ article.ac-small {
+  height: 140px;
+}
+
+.ac-container input:checked ~ article.ac-medium {
+  height: 180px;
+}
+
+.ac-container input:checked ~ article.ac-large {
+  height: 230px;
 }

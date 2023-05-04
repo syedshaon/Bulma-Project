@@ -1,11 +1,5 @@
-$base-color: #c6538c;
-$border-dark: rgba($base-color, 0.88);
-
 /* The ffollowing variables will override Bootstarp's variables */
-$primary: #eeba2b;
-$danger: #ff4136;
-
-$theme-colors: (
-  "primary": $primary,
-  "danger": $danger,
-);
+$dark: rgb(33, 37, 41);
+$warning: rgb(255, 153, 7);
+$primary: rgb(13, 110, 253);
+$grey: rgb(108, 107, 125);

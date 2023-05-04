@@ -4,12 +4,366 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        
   </head>
 
-  <body class="bg-danger">
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Webpack!</h1>
-      <button class="btn btn-primary">Primary button</button>
+  <body >
+    <!-- Navbar -->
+      
+         <nav class="navbar p-3  is-fixed-top  has-background-dark" role="navigation" aria-label="main navigation">
+          <div class="container">
+            <div class="navbar-brand">
+              <a class="navbar-item has-text-light" href="#">
+                <img src="https://bulma.io/assets/Bulma%20Icon.svg"   height="28" style="margin-right: 10px;" />  <h1 class="is-size-5">Bulma Bootcamp</h1>
+              </a>
+
+              <a role="button" class="navbar-burger has-text-light" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu ">
+              <div class="navbar-end has-text-centered">
+                <a href="#learn" class="navbar-item  has-text-light has-background-dark"> What you will learn</i> </a>
+
+                <a href="#faq" class="navbar-item has-text-light  has-background-dark"> Questions </a>
+
+                <a href="#instructors" class="navbar-item has-text-light  has-background-dark"> Our Instructions </a>
+              </div>
+
+              
+            </div>
+          </div>
+            
+          </nav>
+       
+    <!-- Navbar Ends -->
+    <!-- showcase starts -->
+    <section class="showcase mt-6 pt-6 has-background-dark">
+      <div class="container">
+        <div class="columns is-justify-content-space-between is-align-items-center has-text-light">
+          <div class="column showcase-col1 p-6 has-text-centered has-text-left-desktop">
+            <h1 class="is-size-3">Become a <span class="has-text-warning">Web Developer</span></h1>
+            <p class="is-size-5 my-4">We focus on teaching our students the fundamentals of the lastest and greatest technologies to prepare them for their first dev role.</p>
+            <button class="button mb-2 is-primary js-modal-trigger" data-target="modal-js-example"  >Start The Enrollemnt</button>
+          </div>
+          <div class="column is-hidden-mobile">
+            <img class="image " src="./assets/showcase.svg" alt="showcase" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- showcase ends -->
+    <!-- Signup Starts -->
+    <section class="newsletter has-background-primary has-text-light p-6">
+      <div class="container">
+        <div class="columns has-text-centered has-text-left-desktop is-align-items-center is-justify-content-space-between">
+          <h4 class="is-size-3 mb-4  has-text-light">Sign Up For Our Newsletter</h4>
+          <form class="" role="subscribe">
+            <div class="field has-addons">
+            <div class="control">
+              <input class="input is-size-6 has-text-dark" type="email" placeholder="Enter email">
+            </div>
+            <div class="control">
+              <button class="button is-dark">
+                Subscribe
+              </button>
+            </div>
+          </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Signup Ends -->
+    <!-- Boxes Starts -->
+    <section class="p-5">
+      <div class="container">
+        <div class="columns has-text-centered">
+          <div class="column  mb-5   mb-0">
+            <div class="card has-background-dark p-5 has-text-light">
+              <div class="has-text-centered">
+                <div class="is-size-1 mb-3">
+                  <i class="fa-solid has-text-primary fa-laptop"></i>
+                </div>
+                <h3 class="is-size-4 mb-3">Virtual</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?</p>
+                <a href="#" class="button is-primary mt-5 mb-2 mt">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="column  mb-5   mb-0">
+            <div class="card has-background-grey p-5 has-text-light">
+              <div class="has-text-centered">
+                <div class="is-size-1 mb-3">
+                  <i class="fa-solid has-text-primary fa-users-gear"></i>
+                </div>
+                <h3 class="is-size-4 mb-3">Hybrid</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?</p>
+                <a href="#" class="button is-primary mt-5 mb-2 mt">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="column  mb-5   mb-0">
+            <div class="card has-background-dark  p-5 has-text-light">
+              <div class="has-text-centered">
+                <div class="is-size-1 mb-3">
+                  <i class="fa-solid has-text-primary fa-user-group"></i>
+                </div>
+                <h3 class="is-size-4 mb-3">In Person</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?</p>
+                <a href="#" class="button is-primary mt-5 mb-2 mt">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Boxes Ends -->
+
+    <!-- Learn Section Starts -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="columns is-justify-content-space-between is-align-items-center">
+          <div class="column">
+            <img src="./assets/fundamentals.svg" alt="our fundamentals" class="image" />
+          </div>
+          <div class="column p-5">
+            <h2 class="is-size-1  mb-3">Learn The fundamentals</h2>
+            <p class="is-size-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quis atque, hic aliquam distinctio animi repellendus cumque, repudiandae harum, saepe at qua !</p>
+            <p class="is-size-6  mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio vel eum, non earum ipsum nisi odit r s error sed reiciendis animi magnam autem natus distinctio, laudantium doloribus quibusdam molestiae qui, a itaque?</p>
+            <a href="#" class="button is-light mt-3"> <i class="fa-solid pr-1 fa-chevron-right"></i> Read More </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Learn Section End -->
+    <!-- React Section Starts -->
+    <section class="p-5 has-background-dark has-text-light">
+      <div class="container">
+        <div class="columns is-justify-content-space-between is-align-items-center">
+          
+          <div class="column p-5">
+            <h2 class="is-size-1 mb-3">Learn React</h2>
+            <p class="is-size-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa quis atque, hic aliquam distinctio animi repellendus cumque, repudiandae harum, saepe at qua !</p>
+            <p class="is-size-6  mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio vel eum, non earum ipsum nisi odit r s error sed reiciendis animi magnam autem natus distinctio, laudantium doloribus quibusdam molestiae qui, a itaque?</p>
+            <a href="#" class="button is-light mt-3"> <i class="fa-solid pr-1 fa-chevron-right"></i> Read More </a>
+          </div>
+          <div class="column">
+            <img src="./assets/react.svg" alt="Learn React" class="image" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- React SEction Ends -->
+    <!-- FAQ starts here -->
+    <section id="faq" class="mt-6">
+      <div class="container">
+        <h3 class="is-size-3 has-text-centered is-bold">Frequently Asked Questions</h3>
+        
+        <section class="ac-container">
+				<div>
+					<input id="ac-1" name="accordion-1" type="radio" checked="">
+					<label for="ac-1">Where exactly are you located?</label>
+					<article class="ac-small">
+						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio neque suscipit ipsa eius voluptates necessitatibus quia quod aperiam. Veritatis quam autem atque at voluptatem, ex cupiditate numquam placeat quidem alias eaque tempora deserunt id, earum magnam quos necessitatibus, ducimus ab..</p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-2" name="accordion-1" type="radio">
+					<label for="ac-2">Will you help me find a job?</label>
+					<article class="ac-medium">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, tenetur excepturi error recusandae necessitatibus blanditiis rerum libero, odit ullam adipisci tempora quo voluptates quidem reiciendis illum molestias ipsa est! Quisquam repellendus enim ipsam nesciunt similique! </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-3" name="accordion-1" type="radio">
+					<label for="ac-3">How do I sign up?</label>
+					<article class="ac-large">
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti repellendus soluta, fugit iste neque dolor. Sapiente fugit obcaecati molestias expedita dolores et cum tempore, tempora quo, molestiae at aliquid libero quod ex impedit! Necessitatibus, nemo. </p>
+					</article>
+				</div>
+
+				<div>
+					<input id="ac-4" name="accordion-1" type="radio">
+					<label for="ac-4">How much does it cost to attend?</label>
+					<article class="ac-large">
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam temporibus enim a mollitia sapiente ex. Quod et blanditiis similique illo illum sed aut! Ea doloremque voluptatem sunt ducimus expedita iste, possimus iusto, ullam laborum enim perspiciatis praesentium non quaerat aut? </p>
+					</article>
+				</div>
+        <div>
+					<input id="ac-5" name="accordion-1" type="radio">
+					<label for="ac-5">What do I need to know?</label>
+					<article class="ac-large">
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ratione error! Voluptate animi id ipsum blanditiis delectus quibusdam cupiditate ab officia, corporis optio sint magnam eos numquam excepturi expedita? Quibusdam. </p>
+					</article>
+				</div>
+			</section>
+
+      </div>
+      
+    </section>
+    <!-- FAQ ends here -->
+    <!-- Instructors Starts Here -->
+ <section id="instructors" class="p-5 has-background-primary has-text-light has-text-centered">
+      <div class="container">
+        <h3 class="is-size-3 my-5">Our Instructors</h3>
+        <p class="mb-5">Our Instructors all have 5+ years working as a web developer in the industry.</p>
+        <div class="columns has-text-centered">
+          <div class="column  mb-5   mb-0">
+            <div class="card has-background-light p-5 has-text-dark">
+              <div class="has-text-centered">                 
+              <figure class="image is-128x128 mx-auto">
+                <img class="is-rounded" src="https://randomuser.me/api/portraits/men/4.jpg">
+              </figure>
+                <h3 class="card-title mb-3">John Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?</p>            
+                <div class="is-flex is-justify-content-center ">
+                  <a href="#"><i class="fa-brands has-text-dark  column fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="column  mb-5   mb-0">
+            <div class="card has-background-light p-5 has-text-dark">
+              <div class="has-text-centered">                 
+              <figure class="image is-128x128 mx-auto">
+                <img class="is-rounded" src="https://randomuser.me/api/portraits/women/14.jpg">
+              </figure>
+                <h3 class="card-title mb-3">Ridi Shah</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?</p>            
+                <div class="is-flex is-justify-content-center ">
+                  <a href="#"><i class="fa-brands has-text-dark column  fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="column  mb-5   mb-0">
+            <div class="card has-background-light p-5 has-text-dark">
+              <div class="has-text-centered">                 
+              <figure class="image is-128x128 mx-auto">
+                <img class="is-rounded" src="https://randomuser.me/api/portraits/men/5.jpg">
+              </figure>
+                <h3 class="card-title mb-3">Steve Smith</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?</p>            
+                <div class="is-flex is-justify-content-center ">
+                  <a href="#"><i class="fa-brands has-text-dark column  fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column  fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column  fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+           <div class="column  mb-5   mb-0">
+            <div class="card has-background-light p-5 has-text-dark">
+              <div class="has-text-centered">                 
+              <figure class="image is-128x128 mx-auto">
+                <img class="is-rounded" src="https://randomuser.me/api/portraits/women/4.jpg">
+              </figure>
+                <h3 class="card-title mb-3">Jane Doe</h3>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, dolores?</p>            
+                <div class="is-flex is-justify-content-center ">
+                  <a href="#"><i class="fa-brands has-text-dark  column fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-linkedin"></i></a>
+                  <a href="#"><i class="fa-brands has-text-dark column fa-instagram"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
+    <!-- Instructors Ends Here -->
+    <!-- Contact Details starts -->
+    <section class="contacts p-5">
+      <div class="container">
+        <div class="is-flex-desktop is-align-items-center">
+          <div class="column has-text-centered has-text-left-desktop">
+            <h3 class="has-text-centered is-size-3 mb-5">
+              Contact Info
+            </h3>
+            <p class="p-1 address-border "><b>Main Location:</b> 20 Main St. Boston MA</p>
+            <p class="p-1 address-border "><b>Enrollment Phone:</b> (555)-555-555</p>
+            <p class="p-1 address-border "><b>Student Phone:</b> (555)-555-556</p>
+            <p class="p-1 address-border "><b>Enrollment Email:</b> enroll@Frontendabc.com</p>
+            <p class="p-1  address-border"><b>Student Email:</b> student@Frontendabc.com</p>
+          </div>
+          <div class="column has-text-centered has-text-left-desktop">
+            <!--Google map-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48338.39953530132!2d-73.971052!3d40.780717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2588f046ee661%3A0xa0b3281fcecc08c!2sManhattan%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1683135711101!5m2!1sen!2sus" width="600" height="350" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <!--Google Maps-->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Details Ends -->
+    <footer class="has-background-dark has-text-light p-3">
+      <div class="container has-text-centered">Copyright &copy; 2023 Bulma Bootcamp</div>
+    </footer>
+
+    <!-- Modal -->
+ 
+  <div id="modal-js-example" class="modal">
+     <div class="modal-background "></div>
+    <div class="modal-content card  p-6 is-rounded has-background-light ">
+      <div class="modal-header">
+        <h1 class="is-size-4 mb-4 " id="exampleModalLabel">Enroll Today</h1>
+         
+      </div>
+      <div class="modal-body ">
+        <p class="is-size-6">Fill out this form and we will get back to you</p>
+        <form class="mt-5">
+          <div class="field">
+            <label class="label">First Name: </label>
+            <div class="control">
+              <input class="input" type="text" placeholder="e.g Alex ">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Last Name: </label>
+            <div class="control">
+              <input class="input" type="text" placeholder="e.g  Smith">
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label">Email: </label>
+            <div class="control">
+              <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Phone: </label>
+            <div class="control">
+              <input class="input" type="tel" placeholder="e.g. (555)555-558">
+            </div>
+          </div>
+         
+        
+        </form>
+      </div>
+      <div class="modal-footer mt-5">
+        <button class="modal-close is-large button  " aria-label="close"></button>
+        <button type="button" class="button is-primary">Submit</button>
+      </div>
     </div>
+  </div>
+ 
+
+
   </body>
 </html>

@@ -48,7 +48,7 @@ module.exports = {
       filename: "index.html",
       template: "./src/index.html",
       //   favicon: path.resolve(__dirname, "../icons/favicon.ico"),
-      favicon: "./src/icons/favicon.ico",
+      favicon: "./src/assets/favicon.ico",
     }),
     new ESLintPlugin(),
     new StylelintPlugin({
